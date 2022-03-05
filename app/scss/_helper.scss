@@ -1,0 +1,35 @@
+.linear-button {
+  position: relative;
+  padding: 1.2rem 2.75rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(
+    237.12deg,
+    $color-brown-light 0%,
+    $color-pink-light 50.52%,
+    $color-blue-light 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    padding: 1.7px;
+    background: linear-gradient(
+      237.12deg,
+      $color-brown-light 0%,
+      $color-pink-light 50.52%,
+      $color-blue-light 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+}

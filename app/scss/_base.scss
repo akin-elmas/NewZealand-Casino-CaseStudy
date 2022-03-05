@@ -1,0 +1,35 @@
+// Color Variables
+$color-primary: #07041c;
+$color-purple-dark: #14102b;
+$color-purple-light: #282349;
+$color-font-primary: #ffff;
+// Button-Linear
+$color-blue-light: #80fef7;
+$color-pink-light: #c3a6fc;
+$color-brown-light: #ffcea8;
+
+// FONT VARIABLES
+$font-primary: "Kanit", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+
+$max-width: 114rem;
+$gutter: 20px;
+$finger-size: 44px;
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: $font-primary;
+  color: $color-font-primary;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.container {
+  width: $max-width;
+  max-width: 100%;
+  margin: 0 auto;
+}
+h1 {
+  text-transform: uppercase;
+}
