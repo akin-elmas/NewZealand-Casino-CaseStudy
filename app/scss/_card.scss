@@ -56,22 +56,31 @@
       );
       border-radius: 14rem;
     }
+    &:first-child {
+      img {
+        margin-left: 1.1rem;
+      }
+      .cardlist__card__star {
+        margin-right: 1.6rem;
+      }
+    }
     &__logo {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-left: 7.45rem;
+      margin-left: 5.45rem;
+      max-width: 10rem;
       &__img {
         width: 100%;
       }
       span {
         display: flex;
         align-items: center;
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         font-weight: 500;
-        line-height: 2.5rem;
         margin-top: 1rem;
+        width: max-content;
         img {
           margin-left: 1rem;
           width: 1.8rem;
@@ -79,7 +88,7 @@
       }
     }
     &__content {
-      margin-left: 8.9rem;
+      margin-left: 4.9rem;
       display: flex;
       flex-direction: column;
       max-width: 20rem;
@@ -100,7 +109,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      margin-left: 9.4rem;
+      margin-left: 7.4rem;
       margin-top: -1rem;
       p {
         font-weight: 500;
@@ -143,6 +152,28 @@
       & > input:not(:checked) ~ label:hover,
       & > input:not(:checked) ~ label:hover ~ label {
         background-image: url(../../img/star.svg);
+      }
+    }
+    a {
+      @include linear-button;
+      margin-left: 6.1rem;
+      font-size: 1.7rem;
+      padding: 0.9rem 5.2rem;
+    }
+    &__deposit {
+      margin-left: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      span {
+        color: #58607d;
+        font-size: 1.7rem;
+        font-weight: 500;
+      }
+      b {
+        font-size: 2.7rem;
+        font-weight: 700;
       }
     }
   }
