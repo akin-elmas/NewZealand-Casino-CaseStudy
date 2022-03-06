@@ -7,7 +7,8 @@ $color-font-primary: #ffff;
 $color-blue-light: #80fef7;
 $color-pink-light: #c3a6fc;
 $color-brown-light: #ffcea8;
-
+// Card
+$color-card-bg: #241f43;
 // FONT VARIABLES
 $font-primary: "Kanit", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
@@ -22,8 +23,10 @@ html {
 body {
   font-family: $font-primary;
   color: $color-font-primary;
+  background-color: $color-primary;
   font-weight: 300;
   line-height: 1.6;
+  box-sizing: border-box;
 }
 .container {
   width: $max-width;

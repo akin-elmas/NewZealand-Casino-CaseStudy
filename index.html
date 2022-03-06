@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
@@ -81,15 +85,59 @@
         </div>
       </section>
 
-      <section class="card container">
-        <h2 class="card__title">List of Top 5 Casinos in 2021</h2>
-        <nav class="card__nav">
+      <section class="list container">
+        <h2 class="list__title">List of Top 5 Casinos in 2021</h2>
+        <nav class="list__nav">
           <li><a href="#" class="default">Recommended</a></li>
           <li><a href="#" class="active">New Casinos</a></li>
           <li><a href="#" class="default">top rated</a></li>
           <li><a href="#" class="default">Best bonus</a></li>
           <li><a href="#" class="default">free spins</a></li>
         </nav>
+
+        <div class="cardlist">
+          <div class="cardlist__card">
+            <div class="cardlist__card__num">#1</div>
+            <div class="cardlist__card__logo">
+              <img
+                class="cardlist__card__logo__img"
+                src="./img/21_bit_logo 1.svg"
+                alt="logo"
+              />
+              <span>
+                21bit
+                <img src="./img/new_zealand.svg" alt="new zealand flag" />
+              </span>
+            </div>
+            <div class="cardlist__card__content">
+              <li>
+                <img src="./img/right_arrow.svg" alt="icon" />250% up to 100€
+                Bonus
+              </li>
+              <li>
+                <img src="./img/right_arrow.svg" alt="icon" />20 Free Spins
+              </li>
+              <li>
+                <img src="./img/right_arrow.svg" alt="icon" />20x Wagering
+              </li>
+            </div>
+            <div class="cardlist__card__star">
+              <p>4.8/10</p>
+              <div class="cardlist__card__rating">
+                <input type="radio" name="rating" id="rating-5" />
+                <label for="rating-5"></label>
+                <input type="radio" name="rating" id="rating-4" />
+                <label for="rating-4"></label>
+                <input type="radio" name="rating" id="rating-3" />
+                <label for="rating-3"></label>
+                <input type="radio" name="rating" id="rating-2" />
+                <label for="rating-2"></label>
+                <input type="radio" name="rating" id="rating-1" />
+                <label for="rating-1"></label>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
