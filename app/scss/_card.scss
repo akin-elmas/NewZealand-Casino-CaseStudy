@@ -64,6 +64,12 @@
         margin-right: 3.7rem;
       }
     }
+    &:last-child {
+      .cardlist__card__logo {
+        margin-right: 2.5rem;
+        width: 9.7rem;
+      }
+    }
     &__logo {
       display: flex;
       flex-direction: column;
