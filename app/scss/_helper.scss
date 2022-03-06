@@ -1,7 +1,8 @@
-.linear-button {
+@mixin linear-button {
   position: relative;
-  padding: 1.2rem 2.75rem;
+  text-decoration: none;
   display: inline-block;
+  text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 700;
   background: linear-gradient(
@@ -32,4 +33,16 @@
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }
+}
+
+@mixin white-border {
+  font-weight: 700;
+  border: 1px solid #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5rem;
+  line-height: 2.5rem;
+  text-decoration: none;
+  color: $color-font-primary;
 }

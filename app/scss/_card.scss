@@ -1,0 +1,28 @@
+.card {
+  margin-top: 1.1rem;
+
+  &__title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 5.2rem;
+    text-transform: uppercase;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      list-style: none;
+      margin-right: 1rem;
+    }
+    li > .default {
+      padding: 1.25rem 4.5rem;
+      @include white-border;
+    }
+    li > .active {
+      padding: 1.25rem 4.5rem;
+      @include linear-button;
+    }
+  }
+}
